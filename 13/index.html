@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="block">
+        <p class="block">Welcome to my website </p>
+    </nav>
+    <div>
+        <h4>Hey There, My name is <span id="username">Ayush</span></h4>
+        <p class="paragraph"> Here is the code for you</p>
+        <pre><code>console.log("Hey There")</code></pre>
+    </div>
+
+    <div>
+        <div>
+            <h3>Hello</h3>
+        </div>
+    </div>
+
+    <script>
+        // query Selector 
+        // const body = document.querySelector("body");
+        // console.log(body);
+        // body.innerHTML="<h1>HACKED:)</h1>"
+        // console.log(body.innerHTML);
+
+        // const div=document.querySelector("div");
+        // div.innerHTML="<h1>HACKED:)</h1>";
+
+        // const pre=document.querySelector("pre");
+        // pre.textContent="alert('Hello');";
+
+        // const username=document.querySelector("#username");
+        // username.innerText="John";
+
+        const ele = document.querySelectorAll(".block");
+        ele.forEach((e) => { console.log(e.innerHTML) })
+    </script>
+</body>
+
+</html>

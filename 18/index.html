@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color {
+            color: red;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="block">
+        <p class="remove">Welcome to my website </p>
+    </nav>
+    <div>
+        <h4 id="name">Hey There, My name is <span id="username">Ayush</span></h4>
+        <p class="block"> Here is the code for you</p>
+        <pre><code>console.log("Hey There")</code></pre>
+    </div>
+
+    <div>
+        <div>
+            <h3>Hello</h3>
+        </div>
+    </div>
+
+    <div id="container"></div>
+
+    <button id="clickButton">Click Me</button>
+
+    <script>
+        // let resultFromServer=fetch("https://www.google.com");
+        // console.log(resultFromServer);
+
+        let a=10;
+        let b=20;
+        let result=a+b;
+
+        async function getData(){
+            let resultFromServer=await fetch("https://www.google.com");
+            console.log(resultFromServer);
+        }
+
+        getData();
+        console.log(result);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color {
+            color: red;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="block">
+        <p class="block">Welcome to my website </p>
+    </nav>
+    <div>
+        <h4>Hey There, My name is <span id="username">Ayush</span></h4>
+        <p class="paragraph"> Here is the code for you</p>
+        <pre><code>console.log("Hey There")</code></pre>
+    </div>
+
+    <div>
+        <div>
+            <h3>Hello</h3>
+        </div>
+    </div>
+
+    <script>
+        const el = document.getElementById("username");
+        el.innerText = "John";
+        // el.classList.add("red-color", "underline");
+        // console.log(el.classList);
+
+        // el.classList.remove("red-color");
+
+        el.style.textDecoration="underline";
+        el.style.color="orange"
+
+        // console.log(el.parentElement)
+
+        // el.parentElement.style.background="grey";
+
+        el.setAttribute("area", "234");
+        // el.remove();
+
+    </script>
+</body>
+
+</html>
