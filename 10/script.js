@@ -3,6 +3,7 @@
 const students = ["Piyush", "John", "Aakash"];
 console.log(students);
 console.log(students[0]+" "+students[1]+" "+students[2]);
+console.log(students[0]);
 
 students[0]="Ayush";
 console.log(students);
